@@ -1,0 +1,43 @@
+@media only screen and (max-width: 480px) {
+    .header-a {
+        width: 100%;
+    }
+
+    .header-a > img {
+        max-height: 50% !important;
+        max-width: 50% !important;
+    }
+
+    .header-a-bg {
+        background-color: #000000aa;
+        background-image: none;
+        width: 100%;
+    }
+
+    .header-bg-cut {
+        background: none;
+    }
+
+    .profil-bg {
+        background-image: url("/img/bg_header_cut-blur.png");
+    }
+
+    .profil-bg-mobile {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #fffaf055;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .profil-isi {
+        margin: 0 auto;
+        padding: 6rem 0;
+    }
+}
