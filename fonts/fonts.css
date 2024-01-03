@@ -11,6 +11,12 @@
     src: url('fontawesome/duotone900/fa-duotone.woff2') format('woff2');
 }
 
+/* Solid 900 */
+@font-face {
+    font-family: 'Font Awesome 6 Solid';
+    src: url('fontawesome/solid900/fa-solid.woff2') format('woff2');
+}
+
 
 
 /* Montserrat */

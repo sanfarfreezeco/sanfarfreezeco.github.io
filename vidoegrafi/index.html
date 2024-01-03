@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <script src="/js/jquery-3.6.1.min.js"></script>
     <script src="/js/footer.js"></script>
+    <script src="js/prevPopup.js"></script>
     <title>Videografi | aurellyan</title>
 </head>
 <body>
@@ -21,9 +22,25 @@
         <section id="visit-ig">
             <a class="button" target="_blank" href="https://instagram.com/_aurellyan">Visit Instagram</a>
             <a class="button" target="_blank" href="https://www.behance.net/aurellyan">Visit Behance</a>
+            <a class="button" href="#" onclick="popupShow()">test</a>
+            <a class="button" id="https://youtube.com/" onclick="popupShow(this)">test yt</a>
+            <a class="button" id="https://www.behance.net/" onclick="popupShow(this)">test behance</a>
         </section>
         <section id="galeri">
             <div style="margin-bottom: 2rem"></div>
+        </section>
+        <section id="preview" style="z-index: 1;">
+            <div id="preview-bg">
+                <div style="align-items: center; display: flex; justify-content: space-between">
+                    <a href="#" onclick="popupHide()" class="fa-duotone" style="color: white; display: flex; height: fit-content; margin: 20px; width: fit-content;">
+                        <p style="font-size: 48px">&#xf057</p>
+                        <p style="font-size: 48px; margin-right: -48px; opacity: 0.4; transform: translateX(-48px)">&#x10f057</p>
+                    </a>
+                    <div style="display: block; margin-right: calc(20px - 0.5rem)">
+                        <a id="openin" class="button">Open In</a>
+                    </div>
+                </div>
+            </div>
         </section>
         <div style="padding-bottom: 50px"></div>
         <footer id="footer" class="footer-bg"></footer>
