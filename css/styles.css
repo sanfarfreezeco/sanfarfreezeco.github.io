@@ -1,0 +1,144 @@
+.noise-bg-light {
+    background-image: url("/img/noise_dark.png");
+}
+
+#gallery {
+    padding: 82px 100px 100px;
+}
+
+#aboutme {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 100px;
+}
+
+#aboutme h1 {
+    font-size: xxx-large;
+    font-weight: bold;
+}
+
+#aboutme p {
+    white-space: pre-line;
+    line-height: 1.5;
+}
+
+#aboutme-a {
+    width: 63.666667%;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+#aboutme-b {
+    width: 30.333333%;
+    background-image: url("../img/aurellyan.me.crop.png");
+    background-attachment: fixed;
+    background-size: calc(30.333333% - 100px);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.year-style {
+    font-weight: bold;
+    font-size: xxx-large;
+    text-align: right;
+}
+
+#year-list {
+    border: 0 solid darkgrey;
+    border-inline-end-width: 4px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#year-list li {
+    margin: 0 20px 0 0;
+    display: flex;
+    justify-content: right;
+}
+
+#year-list > div {
+    display: flex;
+    flex-flow: wrap;
+    padding: 20px 0;
+}
+
+.gallery-size-1 {
+    width: 33.333333%;
+    height: 400px;
+}
+
+.gallery-size-2 {
+    width: 66.666667%;
+    height: 400px;
+}
+
+.gallery-size-1 > div, .gallery-size-2 > div {
+    height: calc(100% - 40px);
+}
+
+#year-list > div > div > div {
+    margin: 20px 40px 20px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.year-bullet {
+    width: 16px;
+    height: 16px;
+    margin-top: 16px;
+    translate: 34px;
+    border-radius: 100%;
+    border: 4px solid darkgrey;
+}
+
+@keyframes yb-first-fade {
+    0% {
+        background-color: black;
+    }
+    40% {
+        background-color: lightgrey;
+    }
+    60% {
+        background-color: lightgrey;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+.year-bullet.yb-first {
+    animation: yb-first-fade 3s infinite ease-in-out;
+}
+
+.year-bullet.yb-after {
+    background-color: lightgrey;
+}
+
+.gallery-captions {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: calc(100% - 50px);
+}
+
+.gallery-captions.white-txt {
+    color: white;
+    text-shadow: 0 0 13px black, 0 0 13px black, 0 0 13px black, 0 0 13px black;
+}
+
+.gallery-captions h2 {
+    font-weight: normal;;
+}
+
+.gallery-captions h3 {
+    font-weight: normal;
+    text-align: right;
+}
+
+.gallery-captions h1, .gallery-captions h2, .gallery-captions h3 {
+    width: 100%;
+    height: fit-content;
+}
