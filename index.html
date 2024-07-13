@@ -2,77 +2,136 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
-	<link rel="stylesheet" href="css/footer.css">
-    <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/footer.js"></script>
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="/js/headerfooter.js"></script>
     <title>aurellyan</title>
 </head>
 <body>
-    <div style="position: relative">
-        <header class="header">
-            <div class="header-a-bg"></div>
-            <div class="header-bg-cut">
-                <div class="header-a">
-                    <img src="img/a_logo.png" style="max-height: 85%; max-width: 85%;">
-                </div>
-                <div class="header-flex-bt">
-                    <a class="button" href="#profil">Profil</a>
-                    <a class="button" href="#galeri">Galeri</a>
-                </div>
-            </div>
-        </header>
-        <section id="profil" class="profil-bg">
-            <div class="profil-bg-mobile">
-                <div class="profil-isi">
-                    <table class="profil-isi-txt">
-                        <tr><th style="padding-bottom: 10pt;">Nama</th></tr>
-                        <tr><td>Fariz Aurellyan</td></tr>
-                        <tr><th style="padding-top: 26pt; padding-bottom: 10pt;">Usia</th></tr>
-                        <tr><td>22</td></tr>
-                        <tr><th style="padding-top: 26pt; padding-bottom: 10pt;">Kewarganegaraan</th></tr>
-                        <tr><td>Indonesia</td></tr>
-                        <tr><td style="padding-top: 46pt"><a class="button" href="tentang-saya">Tentang Saya</a></td></tr>
-                    </table>
-                </div>
-            </div>
-        </section>
-        <section id="galeri" class="galeri-bg">
-            <div class="galeri-title">
-                <h1>G</h1>
-                <h1>A</h1>
-                <h1>L</h1>
-                <h1>E</h1>
-                <h1>R</h1>
-                <h1>I</h1>
-            </div>
-            <div class="galeri-flex">
-                <a class="galeri-isi" href="fotografi">
-                    <div class="galeri-isi-img" style="background-image: url('fotografi/img/sunset03CellTower.jpg');"></div>
-                    <div class="galeri-isi-txt">
-                        <p>Fotografi</p>
+    <header id="header"></header>
+    <div id="gallery" class="noise-bg-light">
+        <div style="border-right: 4px dotted darkgrey; height: 16px; margin-bottom: 2px"></div>
+        <ul id="year-list">
+            <li>
+                <h1 class="year-style">2024</h1>
+                <div class="year-bullet yb-first"></div>
+            </li>
+            <div>
+                <div class="gallery-size-2">
+                    <div style="background-image: url('img/240617pantai/front_bg.jpg')">
+                        <div class="gallery-captions white-txt">
+                            <div>
+                                <h1>Prigi Beach</h1>
+                                <h2>Photography</h2>
+                            </div>
+                            <h3>Jun 17</h3>
+                        </div>
                     </div>
-                </a>
-                <a class="galeri-isi" href="vidoegrafi">
-                    <div class="galeri-isi-img" style="background-image: url('vidoegrafi/img/expo2018Gemaharjo.jpg'); background-position: center 60%"></div>
-                    <div class="galeri-isi-txt">
-                        <p>Videografi</p>
+                </div>
+                <div class="gallery-size-1">
+                    <div style="background-image: url('img/240612futsal/front_bg.jpg')">
+                        <div class="gallery-captions white-txt">
+                            <div>
+                                <h1>Futsal</h1>
+                                <h2>Photography</h2>
+                            </div>
+                            <h3>Jun 12</h3>
+                        </div>
                     </div>
-                </a>
-                <a class="galeri-isi" href="web-design">
-                    <div class="galeri-isi-img" style="background-image: url('vidoegrafi/img/expo2018Gemaharjo.jpg'); background-position: center 60%"></div>
-                    <div class="galeri-isi-txt">
-                        <p>Web Design</p>
+                </div>
+                <div class="gallery-size-1">
+                    <div style="background-image: url('img/eventwb/240526/front_bg.jpg')">
+                        <div class="gallery-captions white-txt">
+                            <div>
+                                <h1>Haru Fest</h1>
+                                <h2>Photography</h2>
+                            </div>
+                            <h3>May 26</h3>
+                        </div>
                     </div>
-                </a>
+                </div>
+                <div class="gallery-size-1">
+                    <div style="background-image: url('img/eventwb/240512/front_bg.jpg'); background-position: top">
+                        <div class="gallery-captions white-txt">
+                            <div>
+                                <h1>Wibuverse</h1>
+                                <h2>Photography</h2>
+                            </div>
+                            <h3>May 12</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-size-1">
+                    <div style="background-image: url('img/eventwb/240303/front_bg.jpg')">
+                        <div class="gallery-captions white-txt">
+                            <div>
+                                <h1>Utsuru 8.5</h1>
+                                <h2>Photography</h2>
+                            </div>
+                            <h3>Mar 3</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-size-1">
+                    <div style="background-image: url('img/eventwb/240127/front_bg.jpg')">
+                        <div class="gallery-captions white-txt">
+                            <div>
+                                <h1>ASIA Fest MYGIF 9.2</h1>
+                                <h2>Photography</h2>
+                            </div>
+                            <h3>Jan 27</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-size-1">
+                    <div style="background-image: url('img/eventwb/240113/front_bg.jpg')">
+                        <div class="gallery-captions white-txt">
+                            <div>
+                                <h1>Jalan Jalan Jejepangan v6.1 Transmart MX Malang</h1>
+                                <h2>Photography</h2>
+                            </div>
+                            <h3>Jan 27</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-size-1">
+                    <div style="background-image: url('img/eventwb/240107/front_bg.jpg')">
+                        <div class="gallery-captions white-txt">
+                            <div>
+                                <h1>Hatsukoi</h1>
+                                <h2>Photography</h2>
+                            </div>
+                            <h3>Jan 7</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div style="padding-bottom: 50px"></div>
-        </section>
-        <footer id="footer" class="footer-bg"></footer>
+            <li>
+                <h1 class="year-style">2023</h1>
+                <div class="year-bullet yb-after"></div>
+            </li>
+            <li>
+                <h1 class="year-style">2022</h1>
+                <div class="year-bullet yb-after"></div>
+            </li>
+            <li>
+                <h1 class="year-style">2021</h1>
+                <div class="year-bullet yb-after"></div>
+            </li>
+            <li>
+                <h1 class="year-style">2020</h1>
+                <div class="year-bullet yb-after"></div>
+            </li>
+            <li>
+                <h1 class="year-style">2019</h1>
+                <div class="year-bullet yb-after"></div>
+            </li>
+            <li>
+                <h1 class="year-style">2018</h1>
+                <div class="year-bullet yb-after"></div>
+            </li>
+        </ul>
     </div>
+    <footer id="footer"></footer>
 </body>
 </html>
