@@ -1,11 +1,3 @@
-.noise-bg-light {
-    background-image: url("/img/noise_dark.png");
-}
-
-#gallery {
-    padding: 82px 100px 100px;
-}
-
 #aboutme {
     display: flex;
     justify-content: space-between;
@@ -38,30 +30,40 @@
     background-repeat: no-repeat;
 }
 
-.year-style {
+#gallery {
+    padding: 82px 100px 100px;
+}
+
+#gallery > h1 {
     font-weight: bold;
     font-size: xxx-large;
+}
+
+.gallery-captions {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: calc(100% - 50px);
+}
+
+.gallery-captions h2 {
+    font-weight: normal;;
+}
+
+.gallery-captions h3 {
+    font-weight: normal;
     text-align: right;
 }
 
-#year-list {
-    border: 0 solid darkgrey;
-    border-inline-end-width: 4px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.gallery-captions h1, .gallery-captions h2, .gallery-captions h3 {
+    width: 100%;
+    height: fit-content;
 }
 
-#year-list li {
-    margin: 0 20px 0 0;
-    display: flex;
-    justify-content: right;
-}
-
-#year-list > div {
-    display: flex;
-    flex-flow: wrap;
-    padding: 20px 0;
+.gallery-captions.white-txt {
+    color: white;
+    text-shadow: 0 0 13px black, 0 0 13px black, 0 0 13px black, 0 0 13px black;
 }
 
 .gallery-size-1 {
@@ -78,10 +80,8 @@
     height: calc(100% - 40px);
 }
 
-#year-list > div > div > div {
-    margin: 20px 40px 20px 0;
-    background-size: cover;
-    background-position: center;
+.noise-bg-light {
+    background-image: url("/img/noise_dark.png");
 }
 
 .year-bullet {
@@ -91,6 +91,52 @@
     translate: 34px;
     border-radius: 100%;
     border: 4px solid darkgrey;
+}
+
+.year-bullet.yb-after {
+    background-color: lightgrey;
+}
+
+.year-bullet.yb-first {
+    animation: yb-first-fade 3s infinite ease-in-out;
+}
+
+.year-bullet.yb-ongoing {
+    animation: yb-first-fade 3s infinite ease-in-out;
+    translate: 16px;
+    margin-top: 8px;
+}
+
+#year-list {
+    border: 0 solid darkgrey;
+    border-inline-end-width: 4px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#year-list > div {
+    display: flex;
+    flex-flow: wrap;
+    padding: 20px 0;
+}
+
+#year-list > div > div > div {
+    margin: 20px 40px 20px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+#year-list li {
+    margin: 0 20px 0 0;
+    display: flex;
+    justify-content: right;
+}
+
+.year-style {
+    font-weight: bold;
+    font-size: xxx-large;
+    text-align: right;
 }
 
 @keyframes yb-first-fade {
@@ -106,39 +152,4 @@
     100% {
         background-color: black;
     }
-}
-
-.year-bullet.yb-first {
-    animation: yb-first-fade 3s infinite ease-in-out;
-}
-
-.year-bullet.yb-after {
-    background-color: lightgrey;
-}
-
-.gallery-captions {
-    padding: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    height: calc(100% - 50px);
-}
-
-.gallery-captions.white-txt {
-    color: white;
-    text-shadow: 0 0 13px black, 0 0 13px black, 0 0 13px black, 0 0 13px black;
-}
-
-.gallery-captions h2 {
-    font-weight: normal;;
-}
-
-.gallery-captions h3 {
-    font-weight: normal;
-    text-align: right;
-}
-
-.gallery-captions h1, .gallery-captions h2, .gallery-captions h3 {
-    width: 100%;
-    height: fit-content;
 }
