@@ -23,18 +23,18 @@
 
 #aboutme-b {
     width: 30.333333%;
-    background-image: url("../img/aurellyan.me.crop.png");
+    background-image: url("/img/aurellyan.me.crop.png");
     background-attachment: fixed;
     background-size: calc(30.333333% - 100px);
     background-position: top right;
     background-repeat: no-repeat;
 }
 
-#gallery {
-    padding: 82px 100px 100px;
+#gallery, #post {
+    padding: 100px;
 }
 
-#gallery > h1 {
+#gallery > h1, #post > h1 {
     font-weight: bold;
     font-size: xxx-large;
 }
@@ -82,6 +82,46 @@
 
 .noise-bg-light {
     background-image: url("/img/noise_dark.png");
+}
+
+#post-header > div {
+    display: flex;
+    align-items: center;
+}
+
+#post-header > div > p {
+    margin: 3px 20px 0;
+}
+
+#post-grid {
+    display: flex;
+    flex-flow: wrap;
+    gap: 30px;
+}
+
+.post-img {
+    height: 100%;
+    background-size: contain;
+}
+
+.post-size.potrait916-3 {
+    width: calc(33.333333% - 20px);
+    aspect-ratio: 9 / 16;
+}
+
+#post-tag-people > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#post-tag-people > div > a {
+    font-family: "Font Awesome 6 Brands";
+}
+
+#post-txt {
+    margin: 30px 0 0;
 }
 
 .year-bullet {
