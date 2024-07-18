@@ -18,7 +18,7 @@
     width: 63.666667%;
     display: flex;
     justify-content: space-between;
-    margin: 100px 0;
+    margin: 220px 0 100px;
 }
 
 #aboutme-b {
@@ -30,7 +30,7 @@
     background-repeat: no-repeat;
 }
 
-#gallery, #post {
+#gallery{
     padding: 100px;
 }
 
@@ -80,8 +80,25 @@
     height: calc(100% - 40px);
 }
 
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 .noise-bg-light {
     background-image: url("/img/noise_dark.png");
+}
+
+#post {
+    padding: 100px 200px;
+}
+
+#post-grid {
+    display: flex;
+    flex-flow: wrap;
+    gap: 30px;
 }
 
 #post-header > div {
@@ -91,12 +108,6 @@
 
 #post-header > div > p {
     margin: 3px 20px 0;
-}
-
-#post-grid {
-    display: flex;
-    flex-flow: wrap;
-    gap: 30px;
 }
 
 .post-img {
@@ -122,6 +133,23 @@
 
 #post-txt {
     margin: 30px 0 0;
+}
+
+#shot-on {
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 30px;
+}
+
+#shot-on > p:first-child {
+    font-family: "Font Awesome 6 Solid";
+    padding-right: 16px;
+}
+
+#spacer-header {
+    background-image: url("/img/noise_dark.png");
+    padding: 60px 0;
 }
 
 .year-bullet {
