@@ -120,6 +120,11 @@
     aspect-ratio: 9 / 16;
 }
 
+.post-size.potrait23-3 {
+    width: calc(33.333333% - 20px);
+    aspect-ratio: 2 / 3;
+}
+
 #post-tag-people > div {
     display: flex;
     gap: 10px;
@@ -172,7 +177,7 @@
 .year-bullet.yb-ongoing {
     animation: yb-first-fade 3s infinite ease-in-out;
     translate: 16px;
-    margin-top: 8px;
+    margin-top: 3px;
 }
 
 #year-list {

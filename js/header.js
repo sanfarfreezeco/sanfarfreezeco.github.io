@@ -1,8 +1,9 @@
-// Underline Page on Header //
-window.onload = function () {
-    if (window.location.pathname === "/") {
-        document.getElementById("work-u").style.opacity = "1";
-    } else if (window.location.pathname === "/aboutme/") {
-        document.getElementById("aboutme-u").style.opacity = "1";
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 50) {
+        document.getElementById("header-container").style.backgroundColor = "rgba(255, 250, 240, 0.75)"
+        document.getElementById("header-container").style.boxShadow = "0 0 20px grey";
+    } else {
+        document.getElementById("header-container").style.backgroundColor = "floralwhite";
+        document.getElementById("header-container").style.boxShadow = "initial";
     }
-}
+});
