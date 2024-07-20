@@ -28,6 +28,8 @@ h1 {
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
+    backdrop-filter: blur(5px) saturate(200%);
+    transition: background-color 0.5s linear, box-shadow 0.5s linear;
 }
 
 #logo {
