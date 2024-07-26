@@ -91,6 +91,17 @@
     background-image: url("/img/noise_dark.png");
 }
 
+.photo-capt {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px 0;
+}
+
+.photo-tag {
+    display: flex;
+    gap: 10px;
+}
+
 #post {
     padding: 100px 200px;
 }
@@ -115,24 +126,60 @@
     background-size: contain;
 }
 
-.post-size.potrait916-3 {
-    width: calc(33.333333% - 20px);
-    aspect-ratio: 9 / 16;
+.post-size > div {
+    background-repeat: no-repeat;
 }
 
+/* Landscape 3:2 x 2 Photo */
+.post-size.landscape32-2 {
+    width: calc(50% - 15px);
+    aspect-ratio: 3 / 2;
+}
+
+/* Potrait 2:3 x 3 Photo */
 .post-size.potrait23-3 {
     width: calc(33.333333% - 20px);
     aspect-ratio: 2 / 3;
 }
 
-#post-tag-people > div {
+/* Potrait 9:16 x 3 Photo */
+.post-size.potrait916-3 {
+    width: calc(33.333333% - 20px);
+    aspect-ratio: 9 / 16;
+}
+
+/* Potrait 2:3 x 2 Photo + Potrait 3:4 x 1 Photo */
+/* a = 2:3   &&   b = 3:4 */
+.post-size.p-23-2-34-1-a {
+    width: calc(32% - 20px);
+    aspect-ratio: 2 / 3;
+}
+
+.post-size.p-23-2-34-1-b {
+    width: calc(36% - 20px);
+    aspect-ratio: 3 / 4;
+}
+
+/* Youtube IFrame 16:9 x 1 Video */
+.post-size.youtube-iframe-169-1, .post-size.youtube-iframe-169-1 > iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.post-tag-people {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    border-left: 4px solid darkgrey;
+}
+
+.post-tag-people > li > div {
     display: flex;
     gap: 10px;
     align-items: center;
     margin-top: 10px;
 }
 
-#post-tag-people > div > a {
+.post-tag-people > li > div > a {
     font-family: "Font Awesome 6 Brands";
 }
 
@@ -224,5 +271,62 @@
     }
     100% {
         background-color: black;
+    }
+}
+
+/* 404 Error Page */
+#p404 {
+    padding: 100px 200px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    background-image: url("/img/noise_dark.png");
+    animation: error-page-404-bg 8s infinite;
+}
+
+#p404 h1 {
+    font-size: 200px;
+    font-weight: bold;
+}
+
+#p404-container {
+    animation: error-page-404-border 8s infinite;
+}
+
+@keyframes error-page-404-bg {
+    0% {
+        background-color: floralwhite;
+    }
+    50% {
+        background-color: #f2cdcc;
+    }
+    100% {
+        background-color: floralwhite;
+    }
+}
+
+@keyframes error-page-404-text-color {
+    0% {
+        color: black;
+    }
+    50% {
+        color: #800503;
+    }
+    100% {
+        color: black;
+    }
+}
+
+@keyframes error-page-404-border {
+    0% {
+        border-left: 4px solid darkgrey;
+        border-right: 4px solid darkgrey;
+    }
+    50% {
+        border-left: 4px solid #d86967;
+        border-right: 4px solid #d86967;
+    }
+    100% {
+        border-left: 4px solid darkgrey;
+        border-right: 4px solid darkgrey;
     }
 }
