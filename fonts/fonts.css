@@ -17,6 +17,10 @@
     src: url('fontawesome/solid900/fa-solid.woff2') format('woff2');
 }
 
+.fa-solid {
+    font-family: "Font Awesome 6 Solid";
+}
+
 
 
 /* Montserrat */

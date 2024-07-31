@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futsal - Jun 12 2024 | aurellyan</title>
     <link rel="stylesheet" href="/css/default.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/fonts/fonts.css">
     <script async src="/js/content.js"></script>
-    <script src="/js/header.js"></script>
+    <style>
+        body, #header-container {
+            animation: error-page-404-bg 8s infinite;
+        }
+        a, h1, h2, p {
+            animation: error-page-404-text-color 8s infinite;
+        }
+    </style>
+    <title>aurellyan</title>
 </head>
 <body>
     <header id="header">
@@ -20,7 +26,14 @@
         </div>
     </header>
     <div id="spacer-header"></div>
-    <div id="content"></div>
+    <div id="p404">
+        <div id="p404-container">
+            <h1>404</h1>
+            <h2>Page Not Found</h2>
+            <br><br>
+            <a href="/">> Back to Home <</a>
+        </div>
+    </div>
     <footer id="footer"></footer>
 </body>
 </html>
