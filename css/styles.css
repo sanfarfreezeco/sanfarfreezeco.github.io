@@ -493,6 +493,12 @@
     animation: error-page-404-border 8s infinite;
 }
 
+@media only screen and (max-width: 600px) {
+    #p404 {
+        padding: 100px 10px;
+    }
+}
+
 @keyframes error-page-404-bg {
     0% {
         background-color: floralwhite;
