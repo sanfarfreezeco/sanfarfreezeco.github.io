@@ -139,13 +139,6 @@
     height: calc(100% - 20px);
 }
 
-#header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
 .noise-bg-light {
     background-image: url("/img/noise_dark.png");
 }
@@ -227,11 +220,6 @@
 .shot-on > p:first-child, .exploring-shot-on > p:first-child {
     font-family: "Font Awesome 6 Solid";
     padding-right: 16px;
-}
-
-#spacer-header {
-    background-image: url("/img/noise_dark.png");
-    padding: 60px 0;
 }
 
 .year-bullet {
@@ -622,6 +610,15 @@
         margin-left: 30px;
     }
 
+    #gallery > h1, #post > h1 {
+        font-size: xx-large;
+    }
+
+    .gallery-captions {
+        height: calc(100% - 20px);
+        padding: 10px;
+    }
+
     .gallery-size-1, .gallery-size-1-phone, .gallery-size-2.gallery-size-1-phone {
         width: 50%;
         aspect-ratio: 1 / 1;
@@ -660,6 +657,14 @@
         margin: 0 20px 30px 20px;
     }
 
+    .year-bullet {
+        margin-top: 8px;
+    }
+
+    .year-bullet.yb-ongoing {
+        margin-top: initial;
+    }
+
     #year-list {
         padding-right: 15px;
     }
@@ -678,5 +683,10 @@
 
     #year-list li {
         margin: 40px 5px 0 0;
+    }
+
+    .year-style {
+        font-size: xx-large;
+        translate: 20px;
     }
 }

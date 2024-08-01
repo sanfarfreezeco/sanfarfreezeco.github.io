@@ -13,6 +13,13 @@ a {
     gap: 35px;
 }
 
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 #header-social-button h1, #menu-phone-item-social h1 {
     font-family: "Font Awesome 6 Brands";
 }
@@ -66,6 +73,11 @@ h1 {
     display: none;
 }
 
+#spacer-header {
+    background-image: url("/img/noise_dark.png");
+    padding: 60px 0;
+}
+
 .underline {
     width: 100%;
     height: 3px;
@@ -80,24 +92,20 @@ h1 {
 
 /* Phone */
 @media only screen and (max-width: 600px) {
-    #screen-phone-close-button {
-        align-items: center;
-        display: flex;
-        margin: 0 50px;
-        justify-content: end;
-        height: 120px;
+    #header-container {
+        height: 60px;
     }
-
-    #screen-phone-close-button h1 {
-        font-size: xxx-large;
-    }
-
+    
     #menu-phone {
         display: flex;
     }
 
     #menu-phone h1, #screen-phone-close-button h1 {
         font-family: "Font Awesome 6 Solid";
+    }
+
+    #menu-phone h1 {
+        font-size: larger;
     }
 
     #header-container {
@@ -116,7 +124,7 @@ h1 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: calc(100% - 220px);
+        height: calc(100% - 120px);
     }
 
     #menu-phone-item p {
@@ -127,7 +135,7 @@ h1 {
     #menu-phone-item-menu {
         display: flex;
         flex-flow: column;
-        gap: 35px;
+        gap: 20px;
     }
 
     #menu-phone-item-menu > div {
@@ -148,10 +156,22 @@ h1 {
         background-color: rgba(255, 250, 240, 0.95);
         background-image: url("/img/noise_dark.png");
         width: 0;
-        height: 100vh;
+        height: 100dvh;
         top: 0;
         right: 0;
         transition: width 0.3s ease-in-out;
+    }
+
+    #screen-phone-close-button {
+        align-items: center;
+        display: flex;
+        margin: 0 50px;
+        justify-content: end;
+        height: 60px;
+    }
+
+    #screen-phone-close-button h1 {
+        font-size: x-large;
     }
 
     #scroll-to-top {
@@ -164,5 +184,9 @@ h1 {
         overflow: hidden;
         opacity: 0;
         transition: opacity 0.3s linear;
+    }
+
+    #spacer-header {
+        padding: 30px 0;
     }
 }
