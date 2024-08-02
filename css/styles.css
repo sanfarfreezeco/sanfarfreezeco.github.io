@@ -1,5 +1,9 @@
 #aboutme {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0 0 0 100px;
 }
@@ -10,23 +14,25 @@
 }
 
 #aboutme p {
-    white-space: pre-line;
     line-height: 1.5;
+    white-space: pre-line;
 }
 
 #aboutme-a {
-    width: 63.666667%;
     justify-content: space-between;
     margin: 220px 0 100px;
+    width: 63.666667%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
 }
 
 #aboutme-b {
-    width: 30.333333%;
-    background-image: url("/img/aurellyan.me.crop.png");
     background-attachment: fixed;
-    background-size: calc(30.333333% - 100px);
+    background-image: url("/img/aurellyan.me.crop.png");
     background-position: top right;
     background-repeat: no-repeat;
+    background-size: calc(30.333333% - 100px);
+    width: 30.333333%;
 }
 
 #exploring-content {
@@ -35,21 +41,25 @@
 }
 
 #exploring-content > ol {
+    list-style-type: none;
     margin: 0;
     padding: 0 30px 0 0;
-    list-style-type: none;
 }
 
 .exploring-header-list {
-    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: right;
+    -ms-flex-pack: right;
     justify-content: right;
+    text-align: right;
 }
 
 .exploring-header-list > h1 {
-    translate: 22px;
-    font-weight: bold;
     font-size: xx-large;
+    font-weight: bold;
+    translate: 22px;
 }
 
 #exploring-post {
@@ -57,17 +67,24 @@
 }
 
 #exploring-post-border-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 30px 100px 0;
 }
 
 #exploring-post-border-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 30px 100px;
 }
 
 .exploring-post-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: wrap;
     flex-flow: wrap;
     gap: 30px;
     padding: 30px 0 60px;
@@ -78,7 +95,11 @@
 }
 
 .exploring-shot-on {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 15px;
 }
@@ -99,11 +120,15 @@
 }
 
 .gallery-captions {
-    padding: 25px;
-    display: flex;
-    flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
     align-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     height: calc(100% - 50px);
+    padding: 25px;
 }
 
 .gallery-captions h2 {
@@ -116,8 +141,10 @@
 }
 
 .gallery-captions h1, .gallery-captions h2, .gallery-captions h3 {
-    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    width: 100%;
 }
 
 .gallery-captions.white-txt {
@@ -126,13 +153,13 @@
 }
 
 .gallery-size-1 {
-    width: 33.333333%;
     aspect-ratio: 1 / 1;
+    width: 33.333333%;
 }
 
 .gallery-size-2 {
-    width: 66.666667%;
     aspect-ratio: 2 / 1;
+    width: 66.666667%;
 }
 
 .gallery-size-1 > div, .gallery-size-2 > div {
@@ -144,12 +171,18 @@
 }
 
 .photo-capt {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 5px 10px 0;
 }
 
 .photo-tag {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
 }
@@ -159,24 +192,35 @@
 }
 
 #post-border-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 30px;
 }
 
 #post-border-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 30px 0;
 }
 
 #post-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: wrap;
     flex-flow: wrap;
     gap: 30px;
 }
 
 #post-header > div, #exploring-post-header > div {
-    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 #post-header > div > p, #exploring-post-header > div > p {
@@ -184,21 +228,25 @@
 }
 
 .post-img {
-    height: 100%;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
 }
 
 .post-tag-people {
+    border-left: 4px solid darkgrey;
     font-family: "Montserrat", sans-serif;
     margin: 0;
-    border-left: 4px solid darkgrey;
 }
 
 .post-tag-people > li > div {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
-    align-items: center;
     margin-top: 10px;
 }
 
@@ -211,8 +259,14 @@
 }
 
 .shot-on {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: end;
     margin-bottom: 30px;
 }
@@ -223,12 +277,12 @@
 }
 
 .year-bullet {
-    width: 16px;
+    border: 4px solid darkgrey;
+    border-radius: 100%;
     height: 16px;
     margin-top: 16px;
     translate: 34px;
-    border-radius: 100%;
-    border: 4px solid darkgrey;
+    width: 16px;
 }
 
 .year-bullet.yb-after {
@@ -236,19 +290,21 @@
 }
 
 .year-bullet.yb-first {
+    -webkit-animation: yb-first-fade 3s infinite ease-in-out;
     animation: yb-first-fade 3s infinite ease-in-out;
 }
 
 .year-bullet.yb-ongoing {
+    -webkit-animation: yb-first-fade 3s infinite ease-in-out;
     animation: yb-first-fade 3s infinite ease-in-out;
-    translate: 16px;
     margin-top: 3px;
+    translate: 16px;
 }
 
 .year-bullet.yb-exploring-list {
+    background-color: lightgrey;
     margin-top: 7.5px;
     translate: 44px;
-    background-color: lightgrey;
 }
 
 #year-list {
@@ -260,7 +316,10 @@
 }
 
 #year-list > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: wrap;
     flex-flow: wrap;
     padding: 10px 0;
 }
@@ -270,20 +329,39 @@
 }
 
 #year-list > div > div > div {
-    margin: 10px 20px 10px 0;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
+    margin: 10px 20px 10px 0;
 }
 
 #year-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: right;
+    -ms-flex-pack: right;
     justify-content: right;
 }
 
 .year-style {
-    font-weight: bold;
     font-size: xxx-large;
+    font-weight: bold;
     text-align: right;
+}
+
+@-webkit-keyframes yb-first-fade {
+    0% {
+        background-color: black;
+    }
+    40% {
+        background-color: lightgrey;
+    }
+    60% {
+        background-color: lightgrey;
+    }
+    100% {
+        background-color: black;
+    }
 }
 
 @keyframes yb-first-fade {
@@ -465,11 +543,12 @@
 
 /* 404 Error Page */
 #p404 {
+    -webkit-animation: error-page-404-bg 8s infinite;
+    animation: error-page-404-bg 8s infinite;
+    background-image: url("/img/noise_dark.png");
+    font-family: "Montserrat", sans-serif;
     padding: 100px 200px;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
-    background-image: url("/img/noise_dark.png");
-    animation: error-page-404-bg 8s infinite;
 }
 
 #p404 h1 {
@@ -478,12 +557,25 @@
 }
 
 #p404-container {
+    -webkit-animation: error-page-404-border 8s infinite;
     animation: error-page-404-border 8s infinite;
 }
 
 @media only screen and (max-width: 600px) {
     #p404 {
         padding: 100px 10px;
+    }
+}
+
+@-webkit-keyframes error-page-404-bg {
+    0% {
+        background-color: floralwhite;
+    }
+    50% {
+        background-color: #f2cdcc;
+    }
+    100% {
+        background-color: floralwhite;
     }
 }
 
@@ -499,6 +591,18 @@
     }
 }
 
+@-webkit-keyframes error-page-404-text-color {
+    0% {
+        color: black;
+    }
+    50% {
+        color: #800503;
+    }
+    100% {
+        color: black;
+    }
+}
+
 @keyframes error-page-404-text-color {
     0% {
         color: black;
@@ -508,6 +612,21 @@
     }
     100% {
         color: black;
+    }
+}
+
+@-webkit-keyframes error-page-404-border {
+    0% {
+        border-left: 4px solid darkgrey;
+        border-right: 4px solid darkgrey;
+    }
+    50% {
+        border-left: 4px solid #d86967;
+        border-right: 4px solid #d86967;
+    }
+    100% {
+        border-left: 4px solid darkgrey;
+        border-right: 4px solid darkgrey;
     }
 }
 
@@ -539,19 +658,21 @@
     }
 
     #aboutme-a {
-        width: 100%;
-        margin: 0;
         background-image: url("/img/aurellyan.me.crop.png");
-        background-size: 50%;
-        background-repeat: no-repeat;
         background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        -webkit-filter: brightness(100%);
         filter: brightness(100%);
+        margin: 0;
+        width: 100%;
     }
 
     #aboutme-a > div {
+        backdrop-filter: blur(8px);
         background-color: rgba(255, 250, 240, 0.5);
         background-image: url("/img/noise_dark.png");
-        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
     }
 
     #aboutme-b {
@@ -620,13 +741,13 @@
     }
 
     .gallery-size-1, .gallery-size-1-phone, .gallery-size-2.gallery-size-1-phone {
-        width: 50%;
         aspect-ratio: 1 / 1;
+        width: 50%;
     }
 
     .gallery-size-2, .gallery-size-2-phone, .gallery-size-1.gallery-size-2-phone {
-        width: 100%;
         aspect-ratio: 2 / 1;
+        width: 100%;
     }
 
     .gallery-size-1 > div, .gallery-size-2 > div {
