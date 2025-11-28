@@ -1,0 +1,153 @@
+/* ======== */
+/* Portrait */
+/* ======== */
+
+/* Portrait 3:4 x 1 Photo */
+.post-size.p34-1 {
+    width: 100%;
+}
+
+.post-size.p34-1 > div:first-child {
+    aspect-ratio: 3 / 4;
+}
+
+/* Portrait 3:4 x 2 Photo */
+.post-size.p34-2 {
+    width: calc(50% - 15px);
+}
+
+.post-size.p34-2 > div:first-child {
+    aspect-ratio: 3 / 4;
+}
+
+/* Portrait 3:4 x 3 Photo */
+.post-size.p34-3 {
+    width: calc(33.333333% - 20px);
+}
+
+.post-size.p34-3 > div:first-child {
+    aspect-ratio: 3 / 4;
+}
+
+
+
+/* ========= */
+/* Landscape */
+/* ========= */
+
+/* Landscape 4:3 x 1 Photo */
+.post-size.l43-1 {
+    width: 100%;
+}
+
+.post-size.l43-1 > div:first-child {
+    aspect-ratio: 4 / 3;
+}
+
+/* Landscape 4:3 x 2 Photo */
+.post-size.l43-2 {
+    width: calc(50% - 15px);
+}
+
+.post-size.l43-2 > div:first-child {
+    aspect-ratio: 4 / 3;
+}
+
+
+
+/* ==================================== */
+/* Combine Portrait 4:3 + Landscape 3:4 */
+/* ==================================== */
+
+/* Portrait 3:4 x 1 Photo + Landscape 4:3 x 1 Photo */
+/* a = Portrait   &&   b = Landscape */
+.post-size.p34-1-l43-1-a {
+    width: calc(36% - 10.8px);
+}
+
+.post-size.p34-1-l43-1-a > div:first-child {
+    aspect-ratio: 3 / 4;
+}
+
+.post-size.p34-1-l43-1-b {
+    width: calc(64% - 19.2px);
+}
+
+.post-size.p34-1-l43-1-b > div:first-child {
+    aspect-ratio: 4 / 3;
+}
+
+/* Portrait 3:4 x 1 Photo + Landscape 4:3 x 2 Photo */
+/* a = Portrait   &&   b = Landscape */
+.post-size.p34-1-l43-2-a {
+    width: calc(21.951% - 13.171px);
+}
+
+.post-size.p34-1-l43-2-a > div:first-child {
+    aspect-ratio: 3 / 4;
+}
+
+.post-size.p34-1-l43-2-b {
+    width: calc(39.024% - 23.415px);
+}
+
+.post-size.p34-1-l43-2-b > div:first-child {
+    aspect-ratio: 4 / 3;
+}
+
+/* Portrait 3:4 x 2 Photo + Landscape 4:3 x 1 Photo */
+/* a = Portrait   &&   b = Landscape */
+.post-size.p34-2-l43-1-a {
+    width: calc(26.471% - 15.882px);
+}
+
+.post-size.p34-2-l43-1-a > div:first-child {
+    aspect-ratio: 3 / 4;
+}
+
+.post-size.p34-2-l43-1-b {
+    width: calc(47.059% - 28.235px);
+}
+
+.post-size.p34-2-l43-1-b > div:first-child {
+    aspect-ratio: 4 / 3;
+}
+
+
+
+/* ================ */
+/* Phone (<= 600px) */
+/* ================ */
+
+@media only screen and (max-width: 600px) {
+    /* ======== */
+    /* Portrait */
+    /* ======== */
+
+    /* Portrait 3:4 x 1 Photo */
+    .post-size.hp-p34-1 {
+        width: 100% !important;
+    }
+
+    /* Portrait 3:4 x 2 Photo */
+    .post-size.hp-p34-2 {
+        width: calc(50% - 5px) !important;
+    }
+
+
+
+    /* ========= */
+    /* Landscape */
+    /* ========= */
+
+    /* Landscape 4:3 x 1 Photo */
+    .post-size.hp-l43-1 {
+        width: 100% !important;
+    }
+
+
+
+    /* ==================================== */
+    /* Combine Portrait 3:4 + Landscape 4:3 */
+    /* ==================================== */
+}

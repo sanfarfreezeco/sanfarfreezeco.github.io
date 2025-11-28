@@ -1,0 +1,39 @@
+/* Vimeo 16:9 x 1 Frame */
+.post-size.vimeo-embed-169-1 {
+    width: 100%;
+}
+
+.post-size.vimeo-embed-169-1 > div:first-child {
+    aspect-ratio: 16 / 9;
+}
+
+/* Vimeo 16:9 x 2 Frame */
+.post-size.vimeo-embed-169-2 {
+    width: calc(50% - 15px);
+}
+
+.post-size.vimeo-embed-169-2 > div:first-child {
+    aspect-ratio: 16 / 9;
+}
+
+/* Vimeo 9:16 x 3 Frame */
+.post-size.vimeo-embed-916-3 {
+    width: calc(33.333333% - 20px);
+}
+
+.post-size.vimeo-embed-916-3 > div:first-child {
+    aspect-ratio: 9 / 16;
+}
+
+
+
+/* ================ */
+/* Phone (<= 600px) */
+/* ================ */
+
+@media only screen and (max-width: 600px) {
+    /* Vimeo 16:9 x 1 Frame */
+    .post-size.hp-vimeo-embed-169-1 {
+        width: 100% !important;
+    }
+}

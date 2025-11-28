@@ -1,0 +1,29 @@
+/* Behance Embed x 1 Frame */
+.post-size.behance-embed-1 {
+    width: 100%;
+}
+
+.post-size.behance-embed-1 > div > iframe {
+    aspect-ratio: 4 / 1;
+}
+
+
+
+/* ================ */
+/* Phone (<= 600px) */
+/* ================ */
+
+@media only screen and (max-width: 600px) {
+    /* Behance Embed x 1 Frame */
+    .post-size.behance-embed-1 > div > iframe {
+        aspect-ratio: 16 / 9 !important;
+    }
+
+    .post-size.hp-behance-embed-1 {
+        width: 100% !important;
+    }
+
+    .post-size.hp-behance-embed-1 > div > iframe {
+        aspect-ratio: 16 / 9 !important;
+    }
+}

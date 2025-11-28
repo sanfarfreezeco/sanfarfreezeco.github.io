@@ -1,0 +1,22 @@
+/* Instagram Embed x 1 Frame */
+.post-size.instagram-embed-1 {
+    width: 100%;
+}
+
+/* Instagram Embed x 2 Frame */
+.post-size.instagram-embed-2, .post-size.instagram-embed-2 > div > blockquote {
+    width: calc(50% - 15px);
+}
+
+
+
+/* ================ */
+/* Phone (<= 600px) */
+/* ================ */
+
+@media only screen and (max-width: 600px) {
+    /* Instagram Embed x 1 Frame */
+    .post-size.hp-instagram-embed-1, .post-size.hp-instagram-embed-1 {
+        width: 100% !important;
+    }
+}
