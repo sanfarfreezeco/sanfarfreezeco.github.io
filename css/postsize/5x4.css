@@ -1,0 +1,84 @@
+/* ======== */
+/* Portrait */
+/* ======== */
+
+/* Portrait 4:5 x 1 Photo */
+.post-size.p45-1 {
+    width: 100%;
+}
+
+.post-size.p45-1 > div:first-child {
+    aspect-ratio: 4 / 5;
+}
+
+/* Portrait 4:5 x 2 Photo */
+.post-size.p45-2 {
+    width: calc(50% - 15px);
+}
+
+.post-size.p45-2 > div:first-child {
+    aspect-ratio: 4 / 5;
+}
+
+/* Portrait 4:5 x 3 Photo */
+.post-size.p45-3 {
+    width: calc(33.333333% - 20px);
+}
+
+.post-size.p45-3 > div:first-child {
+    aspect-ratio: 4 / 5;
+}
+
+
+
+/* ========= */
+/* Landscape */
+/* ========= */
+
+/* Landscape 5:4 x 1 Photo */
+.post-size.l54-1 {
+    width: 100%;
+}
+
+.post-size.l54-1 > div:first-child {
+    aspect-ratio: 5 / 4;
+}
+
+/* Landscape 5:4 x 2 Photo */
+.post-size.l54-2 {
+    width: calc(50% - 15px);
+}
+
+.post-size.l54-2 > div:first-child {
+    aspect-ratio: 5 / 4;
+}
+
+
+
+/* ==================================== */
+/* Combine Portrait 4:5 + Landscape 5:4 */
+/* ==================================== */
+
+
+
+/* ================ */
+/* Phone (<= 600px) */
+/* ================ */
+
+@media only screen and (max-width: 600px) {
+    /* ======== */
+    /* Portrait */
+    /* ======== */
+
+
+
+    /* ========= */
+    /* Landscape */
+    /* ========= */
+
+
+
+    /* ==================================== */
+    /* Combine Portrait 4:5 + Landscape 5:4 */
+    /* ==================================== */
+}

@@ -1,0 +1,117 @@
+/* ======== */
+/* Portrait */
+/* ======== */
+
+/* Portrait 2:3 x 1 Photo */
+.post-size.p23-1 {
+    width: 100%;
+}
+
+.post-size.p23-1 {
+    aspect-ratio: 2 / 3;
+}
+
+/* Portrait 2:3 x 2 Photo */
+.post-size.p23-2 {
+    width: calc(50% - 15px);
+}
+
+.post-size.p23-2 > div:first-child {
+    aspect-ratio: 2 / 3;
+}
+
+/* Portrait 2:3 x 3 Photo */
+.post-size.p23-3 {
+    width: calc(33.333333% - 20px);
+}
+
+.post-size.p23-3 > div:first-child {
+    aspect-ratio: 2 / 3;
+}
+
+
+
+/* ========= */
+/* Landscape */
+/* ========= */
+
+/* Landscape 3:2 x 1 Photo */
+.post-size.l32-1 {
+    width: 100%;
+}
+
+.post-size.l32-1 > div:first-child {
+    aspect-ratio: 3 / 2;
+}
+
+/* Landscape 3:2 x 2 Photo */
+.post-size.l32-2 {
+    width: calc(50% - 15px);
+}
+
+.post-size.l32-2 > div:first-child {
+    aspect-ratio: 3 / 2;
+}
+
+
+
+/* ==================================== */
+/* Combine Portrait 2:3 + Landscape 3:2 */
+/* ==================================== */
+
+/* Portrait 2:3 x 1 Photo + Landscape 3:2 x 1 Photo */
+/* a = Portrait   &&   b = Landscape */
+.post-size.p23-1-l32-1-a {
+    width: calc(30.7692% - 9.2308px);
+}
+
+.post-size.p23-1-l32-1-a > div:first-child {
+    aspect-ratio: 2 / 3;
+}
+
+.post-size.p23-1-l32-1-b {
+    width: calc(69.2308% - 20.7692px);
+}
+
+.post-size.p23-1-l32-1-b > div:first-child {
+    aspect-ratio: 3 / 2;
+}
+
+
+
+/* ================ */
+/* Phone (<= 600px) */
+/* ================ */
+
+@media only screen and (max-width: 600px) {
+    /* ======== */
+    /* Portrait */
+    /* ======== */
+
+    /* Portrait 2:3 x 1 Photo */
+    .post-size.hp-p23-1 {
+        width: 100% !important;
+    }
+
+    /* Portrait 2:3 x 2 Photo */
+    .post-size.hp-p23-2 {
+        width: calc(50% - 5px) !important;
+    }
+
+
+
+    /* ========= */
+    /* Landscape */
+    /* ========= */
+
+    /* Landscape 3:2 x 1 Photo */
+    .post-size.hp-l32-1 {
+        width: 100% !important;
+    }
+
+
+
+    /* ==================================== */
+    /* Combine Portrait 2:3 + Landscape 3:2 */
+    /* ==================================== */
+}

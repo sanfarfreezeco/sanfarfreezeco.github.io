@@ -1,0 +1,94 @@
+/* ======== */
+/* Portrait */
+/* ======== */
+
+/* Portrait 9:16 x 1 Photo */
+.post-size.p916-1 {
+    width: 100%;
+}
+
+.post-size.p916-1 > div:first-child {
+    aspect-ratio: 9 / 16;
+}
+
+/* Portrait 9:16 x 2 Photo */
+.post-size.p916-2 {
+    width: calc(50% - 15px);
+}
+
+.post-size.p916-2 > div:first-child {
+    aspect-ratio: 9 / 16;
+}
+    
+/* Portrait 9:16 x 3 Photo */
+.post-size.p916-3 {
+    width: calc(33.333333% - 20px);
+}
+
+.post-size.p916-3 > div:first-child {
+    aspect-ratio: 9 / 16;
+}
+
+
+
+/* ========= */
+/* Landscape */
+/* ========= */
+
+/* Landscape 16:9 x 1 Photo */
+.post-size.l169-1 {
+    width: 100%;
+}
+
+.post-size.l169-1 > div:first-child {
+    aspect-ratio: 16 / 9;
+}
+
+/* Landscape 16:9 x 2 Photo */
+.post-size.l169-2 {
+    width: calc(50% - 15px);
+}
+
+.post-size.l169-2 > div:first-child {
+    aspect-ratio: 16 / 9;
+}
+
+
+
+/* ====================================== */
+/* Combine Portrait 9:16 + Landscape 16:9 */
+/* ====================================== */
+
+
+
+/* ================ */
+/* Phone (<= 600px) */
+/* ================ */
+
+@media only screen and (max-width: 600px) {
+    /* ======== */
+    /* Portrait */
+    /* ======== */
+
+    /* Portrait 9:16 x 1 Photo */
+    .post-size.hp-p916-1 {
+        width: 100% !important;
+    }
+
+
+
+    /* ========= */
+    /* Landscape */
+    /* ========= */
+
+    /* Landscape 16:9 x 1 Photo */
+    .post-size.hp-l169-1 {
+        width: 100% !important;
+    }
+
+
+
+    /* ====================================== */
+    /* Combine Portrait 9:16 + Landscape 16:9 */
+    /* ====================================== */
+}

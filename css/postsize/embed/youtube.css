@@ -1,0 +1,18 @@
+/* Youtube IFrame 16:9 x 1 Video */
+.post-size.youtube-iframe-169-1, .post-size.youtube-iframe-169-1 > div > iframe {
+    width: 100%;
+}
+
+.post-size.youtube-iframe-169-1 > div:first-child, .post-size.youtube-iframe-169-1 > div > iframe {
+    aspect-ratio: 16 / 9;
+}
+
+
+
+/* ================ */
+/* Phone (<= 600px) */
+/* ================ */
+
+@media only screen and (max-width: 600px) {
+    
+}

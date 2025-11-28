@@ -1,3 +1,27 @@
+// Load <head> Child Elements HTML //
+const xhttpHead = new XMLHttpRequest();
+xhttpHead.onload = function () {
+    const head = document.head;
+    const tempContainer = document.createElement('div');
+    tempContainer.innerHTML = this.responseText;
+
+    while (tempContainer.firstChild) {
+        const element = tempContainer.firstChild;
+        if (element.tagName === 'SCRIPT') {
+            const script = document.createElement('script');
+            for (const attr of element.attributes) {
+                script.setAttribute(attr.name, attr.value);
+            }
+            head.appendChild(script);
+            element.remove();
+        } else {
+            head.appendChild(element);
+        }
+    }
+}
+xhttpHead.open("GET", "/head.html");
+xhttpHead.send();
+
 // Load Header HTML //
 let headerUrl;
 switch (document.location.pathname) {
