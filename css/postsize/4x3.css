@@ -145,6 +145,11 @@
         width: 100% !important;
     }
 
+    /* Landscape 4:3 x 2 Photo */
+    .post-size.hp-l43-2 {
+        width: calc(50% - 5px) !important;
+    }
+
 
 
     /* ==================================== */
