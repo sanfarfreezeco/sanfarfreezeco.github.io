@@ -70,11 +70,26 @@
     /* Portrait */
     /* ======== */
 
+    /* Portrait 4:5 x 1 Photo */
+    .post-size.hp-p45-1 {
+        width: 100% !important;
+    }
+
+    /* Portrait 4:5 x 2 Photo */
+    .post-size.hp-p45-2 {
+        width: calc(50% - 5px) !important;
+    }
+
 
 
     /* ========= */
     /* Landscape */
     /* ========= */
+
+    /* Landscape 5:4 x 1 Photo */
+    .post-size.hp-l54-1 {
+        width: 100% !important;
+    }
 
 
 

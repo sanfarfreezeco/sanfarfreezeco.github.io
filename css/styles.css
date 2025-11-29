@@ -157,6 +157,19 @@
     background-image: url("/img/noise_dark.png");
 }
 
+.open-img-link {
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    opacity: 0;
+    text-align: center;
+    transition: .2s ease-in-out;
+    width: 100%;
+}
+
 .photo-capt {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -218,6 +231,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
+}
+
+.post-img:hover > .open-img-link {
+    opacity: 1;
 }
 
 .post-tag-music {
