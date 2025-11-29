@@ -220,6 +220,22 @@
     height: 100%;
 }
 
+.post-tag-music {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.post-tag-music > div {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.post-tag-music > div > a {
+    font-family: 'Font Awesome 6 Brands';
+}
+
 .post-tag-people {
     border-left: 4px solid darkgrey;
     font-family: "Montserrat", sans-serif;
