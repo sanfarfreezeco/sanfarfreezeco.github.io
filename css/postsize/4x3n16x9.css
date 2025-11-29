@@ -26,6 +26,24 @@
 /* Combine Landscape 4:3 + Landscape 16:9 */
 /* ====================================== */
 
+/* Landscape 4:3 x 1 Photo + Landscape 16:9 x 1 Photo */
+/* a = 4:3   &&   b = 16:9 */
+.post-size.l43-1-l169-1-a {
+    width: calc(42.857% - 12.857px);
+}
+
+.post-size.l43-1-l169-1-a > div:first-child {
+    aspect-ratio: 4 / 3;
+}
+
+.post-size.l43-1-l169-1-b {
+    width: calc(57.143% - 17.143px);
+}
+
+.post-size.l43-1-l169-1-b > div:first-child {
+    aspect-ratio: 16 / 9;
+}
+
 
 
 /* ===================================== */

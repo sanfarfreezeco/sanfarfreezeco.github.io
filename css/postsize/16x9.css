@@ -75,6 +75,11 @@
         width: 100% !important;
     }
 
+    /* Portrait 9:16 x 2 Photo */
+    .post-size.hp-p916-2 {
+        width: calc(50% - 5px) !important;
+    }
+
 
 
     /* ========= */
