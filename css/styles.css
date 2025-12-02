@@ -371,6 +371,17 @@
     justify-content: right;
 }
 
+.year-section-space {
+    padding: 0 !important;
+    position: relative;
+}
+
+.year-section-space > div {
+    bottom: 0;
+    padding: 75px 0;
+    position: absolute;
+}
+
 .year-style {
     font-size: xxx-large;
     font-weight: bold;
