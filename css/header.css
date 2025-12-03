@@ -18,8 +18,16 @@ a {
 }
 
 #header {
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    backdrop-filter: blur(5px) saturate(200%);
+    background-color: floralwhite;
     position: fixed;
     top: 0;
+    -webkit-transition: background-color 0.5s linear, -webkit-box-shadow 0.5s linear;
+    transition: background-color 0.5s linear, -webkit-box-shadow 0.5s linear;
+    -o-transition: background-color 0.5s linear, box-shadow 0.5s linear;
+    transition: background-color 0.5s linear, box-shadow 0.5s linear;
+    transition: background-color 0.5s linear, box-shadow 0.5s linear, -webkit-box-shadow 0.5s linear;
     width: 100%;
     z-index: 1000;
 }
@@ -34,9 +42,6 @@ h1 {
 }
 
 #header-container {
-    -webkit-backdrop-filter: blur(5px) saturate(200%);
-    backdrop-filter: blur(5px) saturate(200%);
-    background-color: floralwhite;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -44,12 +49,9 @@ h1 {
     -ms-flex-pack: justify;
     justify-content: space-between;
     height: 120px;
+    margin: 0 auto;
+    max-width: calc(1920px + 120px);
     padding: 0 100px;
-    -webkit-transition: background-color 0.5s linear, -webkit-box-shadow 0.5s linear;
-    transition: background-color 0.5s linear, -webkit-box-shadow 0.5s linear;
-    -o-transition: background-color 0.5s linear, box-shadow 0.5s linear;
-    transition: background-color 0.5s linear, box-shadow 0.5s linear;
-    transition: background-color 0.5s linear, box-shadow 0.5s linear, -webkit-box-shadow 0.5s linear;
 }
 
 #logo {

@@ -64,6 +64,8 @@
 }
 
 #exploring-post {
+    margin: 0 auto;
+    max-width: 1920px;
     padding: 100px;
 }
 
@@ -112,6 +114,8 @@
 }
 
 #gallery{
+    margin: 0 auto;
+    max-width: 1920px;
     padding: 100px;
 }
 
@@ -188,6 +192,8 @@
 }
 
 #post {
+    margin: 0 auto;
+    max-width: 1920px;
     padding: 100px 200px;
 }
 
