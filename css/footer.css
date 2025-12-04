@@ -8,6 +8,8 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: calc(1920px + 120px);
     padding: 50px 100px;
 }
 
@@ -25,6 +27,15 @@
 #footer-container > div:last-child > div > p {
     font-weight: bold;
     margin-bottom: 7px;
+}
+
+#footer-footprint {
+    padding-top: 50px;
+    position: relative;
+}
+
+#footer-footprint > img {
+    position: absolute;
 }
 
 
