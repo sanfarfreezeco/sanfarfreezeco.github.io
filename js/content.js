@@ -61,6 +61,22 @@ xhttpFooter.send();
 const xhttpContent = new XMLHttpRequest();
 xhttpContent.onload = function () {
     document.getElementById("content").innerHTML = this.responseText;
+
+    if (window.location.hash) {
+        const hash = window.location.hash;
+
+        setTimeout(function() {
+            try {
+                const targetHash = document.getElementById(hash.substring(1));
+
+                if (targetHash) {
+                    targetHash.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            } catch (err) {
+                console.error("Could not scroll to hash:", err);
+            }
+        }, 100);
+    }
 }
 xhttpContent.open("GET", "./content.html");
 xhttpContent.send();
