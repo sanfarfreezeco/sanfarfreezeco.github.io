@@ -1,0 +1,76 @@
+/* ======== */
+/* Portrait */
+/* ======== */
+
+/* Portrait 2:3 x 1 Photo */
+.post-size.macprev.p23-1 {
+    width: 100%;
+}
+
+.post-size.macprev.p23-1 {
+    aspect-ratio: 874 / 1280;
+}
+
+/* Portrait 2:3 x 2 Photo */
+.post-size.macprev.p23-2 {
+    width: calc(50% - 15px);
+}
+
+.post-size.macprev.p23-2 > div:first-child {
+    aspect-ratio: 874 / 1280;
+}
+
+/* Portrait 2:3 x 3 Photo */
+.post-size.macprev.p23-3 {
+    width: calc(33.333333% - 20px);
+}
+
+.post-size.macprev.p23-3 > div:first-child {
+    aspect-ratio: 874 / 1280;
+}
+
+
+
+/* ========= */
+/* Landscape */
+/* ========= */
+
+
+
+/* ==================================== */
+/* Combine Portrait 2:3 + Landscape 3:2 */
+/* ==================================== */
+
+
+
+/* ================ */
+/* Phone (<= 600px) */
+/* ================ */
+
+@media only screen and (max-width: 600px) {
+    /* ======== */
+    /* Portrait */
+    /* ======== */
+
+    /* Portrait 2:3 x 1 Photo */
+    .post-size.macprev.hp-p23-1 {
+        width: 100% !important;
+    }
+
+    /* Portrait 2:3 x 2 Photo */
+    .post-size.macprev.hp-p23-2 {
+        width: calc(50% - 5px) !important;
+    }
+
+
+
+    /* ========= */
+    /* Landscape */
+    /* ========= */
+
+
+
+    /* ==================================== */
+    /* Combine Portrait 2:3 + Landscape 3:2 */
+    /* ==================================== */
+}
