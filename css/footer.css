@@ -1,3 +1,15 @@
+#footer-bar {
+    overflow: hidden;
+}
+
+#footer-bar > div {
+    animation: footer-bar-ani 10s linear infinite;
+    background-image: linear-gradient(to right, rgba(191, 6, 3, 1), rgba(191, 6, 3, 0.25), rgba(191, 6, 3, 1), rgba(191, 6, 3, 0.25), rgba(191, 6, 3, 1));
+    height: 4px;
+    position: relative;
+    width: 200%;
+}
+
 #footer-container {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -36,6 +48,24 @@
 
 #footer-footprint > img {
     position: absolute;
+}
+
+@keyframes footer-bar-ani {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@-webkit-keyframes footer-bar-ani {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
 }
 
 
